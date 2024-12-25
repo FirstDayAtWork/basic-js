@@ -15,7 +15,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function isMAC48Address(n) {
-  return /[\dABCDEF-]{17}/.test(n);
+  return /^([\dA-F]{2}-){5}[\dA-F]{2}$/.test(n);
 }
 module.exports = {
   isMAC48Address
