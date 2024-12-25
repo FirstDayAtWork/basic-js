@@ -44,7 +44,7 @@ function transform(arr) {
     if (obj.isDiscarded) return;
     arr.splice(pos - 1, 0, arr[pos - 1])
   })
-  
+
   arr.map((el, i) => {
     if (map.has(el)
         && el !== arr[0]
