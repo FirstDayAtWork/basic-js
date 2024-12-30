@@ -20,7 +20,6 @@ const chainMaker = {
   removeLink(position) {
     this.value = this.value.split`~~`;
     if (typeof position !== 'number' ||
-       !Number.isInteger(position) ||
        position < +!![] ||
        position > this.value.length
       )
